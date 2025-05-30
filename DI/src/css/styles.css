@@ -167,7 +167,8 @@ main{
     }
     .hero__text{
         text-align: left;
-        padding: 2rem;
+        font-size: 2rem;
+        padding-left: 2rem;
     }
     .hero__button{
         font-size: 1.5rem;
@@ -179,20 +180,130 @@ main{
     }
     .bx{
         font-size: 3rem;
-    }
+    }   
+}
 
-    /* Styles for section about  */
-    .about{
-        border: 2px solid green;
-        margin: 3rem 0; //top left bottom right
-    }
-    .about__container{
-        border: 2px solid blue;
-    }
+/* Styles for section about  */
+.about{
+    border: 2px solid green;
+    margin: 3rem 5rem;
+}
+.about__container{
+    border: 1px solid blue;
+}
+.about__img{
+    border: 1px solid red;
+}
+.about__title{
+    margin-top: 0;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--colorCuatro);
+}
+.about__text{
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--colorCinco);
+    line-height: 1.5;
+    padding: 0 2rem;
+}
+.about__img{
+    display: none;
+}
+
+@media (width>768px){
     .about__img{
-        border: 2px solid red;
+        display: block;
+    }
+    .about{
+        display: flex;
+        gap: 1rem;
+    }
+    .about__container,
+    .about__img{
+        width: 50%;
+        height: 20rem;
+    }
+    .about__img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .about__title{
+        font-size: 3rem;
     }
 }
 
+/* Styles for products */
+.products{
+    border: 2px solid black;
+    background-color: var(--colorCuatro);
+}
+.products__title{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--colorUno);
+    padding-top: 3rem;
+}
+.products__text{
+    text-align: center;
+    font-size: 1rem;
+    color: var(--colorUno);
+    line-height: 1.5;
+}
+.container{
+    border: 1px solid silver;
+}
+
+.products__container{
+    border: 2px solid orange;
+    width: fit-content;
+    margin: 0 auto;
+}
+.product{
+    border: 1px solid yellow;
+    margin: 2rem 0;
+    max-width: 20rem;
+    color: var(--colorUno);
+}
+.product p{
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0 .3rem;
+}
+.product a{
+    margin: 0 .3rem;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+
+}
+
+@media (width>760px){
+    .products__container{
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        flex-wrap: wrap;
+    }
+    .product{
+        margin: 0;
+    }
+    .product a{
+        font-size: 1rem;
+    }
+    .products__title{
+        font-size: 3rem;
+        margin: 0;
+    }
+    .products__text{
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+}
+    
 
 /* Code CSS for your project */
