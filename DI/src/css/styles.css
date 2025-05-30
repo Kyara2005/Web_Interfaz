@@ -180,6 +180,18 @@ main{
     .bx{
         font-size: 3rem;
     }
+
+    /* Styles for section about  */
+    .about{
+        border: 2px solid green;
+        margin: 3rem 0; //top left bottom right
+    }
+    .about__container{
+        border: 2px solid blue;
+    }
+    .about__img{
+        border: 2px solid red;
+    }
 }
 
 
