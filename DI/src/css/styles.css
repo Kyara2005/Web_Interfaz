@@ -305,5 +305,104 @@ main{
     }
 }
     
+/*Styles for section app*/
+.app{
+    border: 2px solid green;
+}
+.mobile{
+    border: 2px solid orange;
+    text-align: center;
+    margin-bottom: 3rem;  /*parte inferior con separación entre las cajas*/
+}
+.mobile__description{
+    font-size: 1rem;  
+    line-height: 1.5;  /*Separacion de parrafo en 1.5*/
+    font-weight: 500; 
+}
+.mobile__buttons{
+    border: 2px solid blue;
+    display: flex;  /*se colocan uno a lado del otro*/
+    justify-content: center;
+    flex-wrap: wrap; /*Automaticamente si no alcanza en dispositivos pequeños pues se ubican uno abajo del otro*/
+    gap: 1rem; /*Separacion en imagenes*/
+}
+.mobile__buttons:hover{
+    cursor: pointer;
+}
+.mobile__img{
+    border: 2px solid lightblue;
+    height: 26rem;
+    overflow: hidden; /*Evita que la imagen se desborde*/
+}
+@media(width>=768px){
+    .app{
+        display: flex; /*Uno a lado del otro las cajas*/
+        margin-top: 3rem;
+        gap: 2rem;
+        justify-content: center;
+    }
+    .mobile__title{
+        font-size: 2.5rem; /*Tamaño del titulo*/
+        text-transform: uppercase;  /*Mayúsculas*/
+    }
+    .mobile__description{
+        font-size: 1.1rem; /*Tamaño de fuente*/
+        line-height: 1.5; /*Separacion de los párrafos*/
+        text-align: justify;
+    }
+    .mobile{
+        order: 2; /*la imagen se*/
+        display: flex; /*Por default de izquierda a derecha*/
+        flex-direction: column; /*Con esto las cjaas se colocan en columnas*/
+        justify-content: space-evenly; /*Las cajas se distribuyen equitativamente*/
+        max-width: 50%; /*Ancho*/
+    }
+    .mobile__img{
+        height: 28rem; /*Alto*/
 
+    }
+}
+
+
+/*Styles for section GALLERY*/
+.gallery{
+    background-color: var(--colorCuatro);
+    height: 20rem;
+    text-align: center;
+    color: var(--colorUno);
+    margin-bottom: 3rem; /*Separacion en la parte superior*/
+}
+.gallery__title{
+    border: 2px solid red;
+    margin: 0; 
+    font-size: 2rem;
+    padding-top: 2rem; /*Separacion automatica en la parte superior*/
+
+}
+.gallery__description{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+@media(width>=768px){
+    .gallery__title{
+        font-size: 3rem;
+    }
+    .gallery__description{
+        font-size: 1.2rem;
+    }
+}
+
+.contact{
+    border: 2px solid brown;
+    margin-bottom: 2rem;
+}
+.contact__form{
+    border: 2px solid orange;
+    background-color: rgb(166, 166, 166,0.17);
+    padding: 1rem;
+    margin: 2rem 0;
+}
+.contact__map{
+    border: 2px solid silver;
+}
 /* Code CSS for your project */
